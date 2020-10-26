@@ -1,0 +1,28 @@
+# maven 
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+/**/HELP.md
+/**/target/
+!/**/.mvn/wrapper/maven-wrapper.jar
+
+
+# eclipse # 
+.classpath
+.project
+.settings/
+bin/
+
+# IDEA #
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+/**/.idea/
+/**/*.iml
+/**/*.iws
+/**/*.ipr
+/**/out/
+
+
