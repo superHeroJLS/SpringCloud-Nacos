@@ -25,8 +25,16 @@ public class ConfigController {
     @Value("${useLocalCache:false}")
     private boolean useLocalCache;
 
-    @RequestMapping("/get")
-    public boolean get() {
+    @Value("${server.undertow.io-threads:1}")
+    private Integer ioThreads;
+
+    @RequestMapping("/useLocalCache")
+    public boolean useLocalCache() {
         return useLocalCache;
+    }
+
+    @RequestMapping("/ioThreads")
+    public Integer ioThreads() {
+        return ioThreads;
     }
 }
